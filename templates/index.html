@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatty The Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Welcome</h1>
-    <p>This is a chatbot project created on flask.</p>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span class="fs-4">Chatty Bot</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </header>
+    </div>
 
-    <br><br>
-    <form>
-        <label> Query:</label>
-        <input type="text" name="query">
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-    <h3>{{ result }}</h3>
+
+    <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+          <h1 class="text-body-emphasis">Welcome</h1>
+          <p class="lead">
+            <h5>
+                This is a chatbot project by Virendra Singh.It can assist you in basic questions , although it's not GPT like app but can 
+                little handful to your queries
+            </h5>
+          </p>
+           <form>
+            <br>
+              <hr>
+                <p><h4>Put Your query here </h4></p>
+                   <input type="text" name="query">
+                 <br>
+                 <br>
+                  <input type="submit" value="Submit" class ="btn btn-primary">
+                 </br>
+              </hr>
+            </br>
+           </form>
+         <h3>{{ result }}</h3>
+        </div>
+    </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
